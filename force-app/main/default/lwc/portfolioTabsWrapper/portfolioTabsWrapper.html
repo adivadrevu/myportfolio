@@ -2,22 +2,25 @@
     <div>
         <lightning-tabset variant="scoped">
             <lightning-tab label="Summary">
-                One Content !
+                <template if:true={recordId}>
+                    <c-portfolio-summary record-id={recordId}
+                    object-api-name={objectApiName}></c-portfolio-summary>
+                </template>
+            </lightning-tab>
+            <lightning-tab label="Skill-sets">
+                Skill-sets Content !
             </lightning-tab>
             <lightning-tab label="Acedemic Projects">
-                Three Content !
+                Acedemic Projects Content !
             </lightning-tab>
             <lightning-tab label="Personal Projects">
-                Two Content !
+                Personal Projects Content !
             </lightning-tab>
             <lightning-tab label="Work Experience">
-                Three Content !
-            </lightning-tab>
-            <lightning-tab label="Skills">
-                Three Content !
+                Work Experience Content !
             </lightning-tab>
             <lightning-tab label="Education">
-                Three Content !
+                Education Content !
             </lightning-tab>
         </lightning-tabset>
     </div>
