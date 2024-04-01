@@ -17,7 +17,10 @@
                 Personal Projects Content !
             </lightning-tab>
             <lightning-tab label="Work Experience">
-                Work Experience Content !
+                <template if:true={recordId}>
+                    
+                </template>
+                <c-portfolio-work-experience record-id={recordId}></c-portfolio-work-experience>
             </lightning-tab>
             <lightning-tab label="Education">
                 Education Content !
