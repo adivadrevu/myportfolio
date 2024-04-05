@@ -7,20 +7,21 @@
                     object-api-name={objectApiName}></c-portfolio-summary>
                 </template>
             </lightning-tab>
-            <lightning-tab label="Skill-sets">
-                Skill-sets Content !
+            <lightning-tab label="Work Experience">
+                <template if:true={recordId}>
+                    <c-portfolio-work-experience record-id={recordId}></c-portfolio-work-experience>
+                </template>                
+            </lightning-tab>
+            <lightning-tab label="Skills-set">
+                <template if:true={recordId}>
+                    <c-portfolio-skills record-id={recordId}></c-portfolio-skills>
+                </template>
             </lightning-tab>
             <lightning-tab label="Acedemic Projects">
                 Acedemic Projects Content !
             </lightning-tab>
             <lightning-tab label="Personal Projects">
                 Personal Projects Content !
-            </lightning-tab>
-            <lightning-tab label="Work Experience">
-                <template if:true={recordId}>
-                    
-                </template>
-                <c-portfolio-work-experience record-id={recordId}></c-portfolio-work-experience>
             </lightning-tab>
             <lightning-tab label="Education">
                 Education Content !
