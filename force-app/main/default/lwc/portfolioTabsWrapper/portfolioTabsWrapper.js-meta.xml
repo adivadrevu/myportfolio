@@ -8,11 +8,8 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightningCommunity__Default">
-            <property name="recordId" label="Record Id" type="String">
-            </property>
-            <property name="objectApiName" label="object Api Name" type="String">
-            </property>
-
+            <property name="recordId" label="Record Id" type="String" />
+            <property name="objectApiName" label="Object API Name" type="String" />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

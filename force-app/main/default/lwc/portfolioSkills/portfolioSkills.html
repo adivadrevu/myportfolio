@@ -1,27 +1,39 @@
 <template>
     <div class ="skills-wrapper slds-var-p-around_x-large">
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> Programming Languages</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={progSkills} for:item ="prog">
+            <lightning-badge key={prog} label = {prog}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
 
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> Web Technologies</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={webSkills} for:item ="web">
+            <lightning-badge key={web} label = {web}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
 
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> CLoud Services</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={cloudSkills} for:item ="cloud">
+            <lightning-badge key={cloud} label = {cloud}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
 
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> Database</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={dataSkills} for:item ="data">
+            <lightning-badge key={data} label = {data}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
 
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> Tools and Frameworks</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={toolSkills} for:item ="tool">
+            <lightning-badge key={tool} label = {tool}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
 
         <h2 class="slds-text-heading_medium slds-var-m-bottom_medium"> Operating System</h2>
-        <lightning-badge label="Alpha" 
-        class="slds-badge_inverse slds-var-m-bottom_medium"></lightning-badge>
+        <template for:each={operatingSkills} for:item ="operating">
+            <lightning-badge key={operating} label = {operating}
+            class="slds-badge slds-var-m-bottom_medium"></lightning-badge>
+        </template>
     </div>>
 </template>
