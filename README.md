@@ -1,5 +1,5 @@
 # myportfolio
-This is my portfolio...
+This is my portfolio which I have created on Salesforce using JavaScript.
 
 
 Now that you’ve created a project, what’s next? Here are some documentation resources to get you started.
